@@ -91,7 +91,7 @@ $ npm install lodash --save
 $ typings install lodash --save
 ```
 - Then you can make reference to lodash from Typescript as so
-```sh
+```ts
 /// <reference path="./typings/index.d.ts" />
 import * as _ from 'lodash';
 ```
