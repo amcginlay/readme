@@ -4,7 +4,7 @@
 - Node and NPM (nodejs.org) - using v4.4.0
 - Visual Studio Code (code.visualstudio.com) - using v1.3.1
 
-#### Prerequsite Global NPM packages (npm i -g <PACKAGE_NAME>)
+#### Prerequsite Global NPM packages
 - Typescript (typescriptlang.org) - using v1.8.10
 ```sh
 $ npm i -g typescript
