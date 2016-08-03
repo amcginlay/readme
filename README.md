@@ -1,16 +1,16 @@
 # Readme
 ## Using TypeScript projects with Visual Studio Code on Mac OSX
 #### Prerequsite Applications
-- Node and NPM (nodejs.org) - using v4.4.0
-- Visual Studio Code (code.visualstudio.com) - using v1.3.1
+- [Node](https://nodejs.org) and [NPM](http://npmjs.org/) - using v4.4.0
+- [Visual Studio Code](http://code.visualstudio.com) - using v1.3.1
 
 #### Prerequsite Global NPM packages
-- Typescript (typescriptlang.org) - using v1.8.10
+- [Typescript](http://typescriptlang.org) - using v1.8.10
 ```sh
 $ npm i -g typescript
 $ tsc -version
 ```
-- Typings (www.npmjs.com/package/typings) - using v1.3.2
+- [Typings](http://www.npmjs.com/package/typings) - using v1.3.2
 ```sh
 $ npm i -g typings
 $ typings -version
@@ -86,7 +86,7 @@ $ typings install env~node --global --save
 ```
 
 #### Next steps
-- You don't yet have a package.json file.  You don't need one because you have no external dependencies yet.  But should you need to install, for example, lodash, try the following:
+- You don't yet have a package.json file.  You don't need one because you have no external dependencies yet.  But should you need to install, for example, [lodash](https://www.npmjs.com/package/lodash), try the following:
 ```sh
 $ npm init -f
 $ npm install lodash --save
