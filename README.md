@@ -96,5 +96,6 @@ $ typings install lodash --save
 ```ts
 /// <reference path="./typings/index.d.ts" />
 import * as _ from 'lodash';
+let head:Number = _.first([1,2]);
 ```
 ... to be continued
