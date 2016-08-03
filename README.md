@@ -51,9 +51,20 @@ console.log("Process #" + process.pid + " says " + greeter.greet());
 ```
   - Open the Output window by typing ``<cmd>+<shift>+U``
   - Now repeat the steps used earlier to invoke the ``Run Build Task`` command
-  - The files ``js/app.js`` and ``js/app.js.map`` will be created but you'll receive the following errors too:
+  - The files ``js/app.js`` and ``js/app.js.map`` will be created but you'll receive the following errors too, which we'll fix later:
 ```
 app.ts(1,1): error TS6053: File 'typings/index.d.ts' not found.
 app.ts(12,27): error TS2304: Cannot find name 'process'.
 9:39:57 PM - Compilation complete. Watching for file changes.
 ```
+  - In VS Code, switch to DEBUG mode using the circular bug icon in the left-hand sidebar, then click the cog icon at the top of the debug panel to configure ``launch.json``.  This file will automatically open itself.
+  - Within the configuration denoted by ``"name": "Launch"``, ensure the following settings are adjusted as follows:
+```
+"program": "${workspaceRoot}/app.ts",
+"sourceMaps": true,
+"outDir": "${workspaceRoot}/js"
+
+```
+  - Hit the green button to run, red square to stop, set breakpoints in the margin, watch variables ... the usual.
+  - Now let's fix the code to allow us to reference type definitions from TypeScript, Node being the obvious example
+  - 
