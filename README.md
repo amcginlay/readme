@@ -1,5 +1,4 @@
 # Readme
-
 ## Using TypeScript projects with Visual Studio Code on Mac OSX
 #### Prerequsite Installs
 - Node and NPM (nodejs.org)
@@ -74,4 +73,4 @@ app.ts(12,27): error TS2304: Cannot find name 'process'.
 - Hit the green button to run, red square to stop, set breakpoints in the margin, watch variables ... the usual.
 #### Getting TypeScript and Node to play nicely with each other
 - Now let's fix the code to allow us to reference type definitions.  When compiling app.ts, Typescript says nothing about the console object but balks at the the process object.  The process object is specific to Node but we need to add a reference a type definition file before the TypeScript compiler will let this pass without any fuss.
-- 
+- kdjfshkdhs
