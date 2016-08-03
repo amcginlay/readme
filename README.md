@@ -1,13 +1,18 @@
 # Readme
 ## Using TypeScript projects with Visual Studio Code on Mac OSX
-#### Prerequsite Installs
-- Node and NPM (nodejs.org)
+#### Prerequsite Applications
+- Node and NPM (nodejs.org) - using v4.4.0
 - Visual Studio Code (code.visualstudio.com) - using v1.3.1 
-- Typescript (typescriptlang.org)
+#### Prerequsite Global NPM packages (npm i -g <PACKAGE_NAME>)
+- Typescript (typescriptlang.org) - using v1.8.10
 ```sh
 $ npm i -g typescript
 $ tsc -version
-$ tsc -help
+```
+- Typings (www.npmjs.com/package/typings) - using v1.3.2
+```sh
+$ npm i -g typings
+$ typings -version
 ```
 #### Creating a new project
 - Launch Visual Studio in a new empty directory
@@ -73,4 +78,21 @@ app.ts(12,27): error TS2304: Cannot find name 'process'.
 
 #### Getting TypeScript and Node to play nicely with each other
 - Now let's fix the code to allow us to reference type definitions.  When compiling app.ts, Typescript says nothing about the console object but balks at the the process object.  The process object is specific to Node but we need to add a reference a type definition file before the TypeScript compiler will let this pass without any fuss.
-- kdjfshkdhs
+- Type the following to fix the errors (NOTE: I never quite figured out why I needed the "env" variant for node !?!?):
+```sh
+$ typings install env~node --global --save
+```
+
+#### Next steps
+- You don't yet have a package.json file.  You don't need one because you have no external dependencies yet.  But should you need to install, for example, lodash, try the following:
+```sh
+$ npm init -f
+$ npm install lodash --save
+$ typings install lodash --save
+```
+- Then you can make reference to lodash from Typescript as so
+```sh
+/// <reference path="./typings/index.d.ts" />
+import * as _ from 'lodash';
+```
+... to be continued
