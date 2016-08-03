@@ -17,6 +17,12 @@ $ mkdir myfirst
 $ cd myfirst
 $ code .
 ```
+  - Inside the VS Code IDE, create a new file named .gitignore and edit as follows
+```
+js/
+node_modules/
+typings/
+```
   - Inside the VS Code IDE, create a new file named app.ts and edit as follows
 ```ts
 /// <reference path="./typings/index.d.ts" />
@@ -66,5 +72,5 @@ app.ts(12,27): error TS2304: Cannot find name 'process'.
 
 ```
   - Hit the green button to run, red square to stop, set breakpoints in the margin, watch variables ... the usual.
-  - Now let's fix the code to allow us to reference type definitions from TypeScript, Node being the obvious example
+  - Now let's fix the code to allow us to reference type definitions.  Note that app.ts knows about the console object but not the process object.  The process object is specific to Node but we need to reference a type definition file before the TypeScript compiler will let this pass without any fuss.
   - 
