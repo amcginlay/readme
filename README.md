@@ -5,11 +5,11 @@
   - Node and NPM (nodejs.org)
   - Visual Studio Code (code.visualstudio.com) - using v1.3.1 
   - Typescript (typescriptlang.org)
-    ```sh
-    $ npm i -g typescript
-    $ tsc -version
-    $ tsc -help
-    ```
+```sh
+$ npm i -g typescript
+$ tsc -version
+$ tsc -help
+```
 #### Creating a new project
   - Launch Visual Studio in a new empty directory
     ```sh
