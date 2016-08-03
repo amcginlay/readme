@@ -70,7 +70,7 @@ app.ts(12,27): error TS2304: Cannot find name 'process'.
 9:39:57 PM - Compilation complete. Watching for file changes.
 ```
 - In VS Code, switch to DEBUG mode using the circular bug icon in the left-hand sidebar, then click the cog icon at the top of the debug panel to configure ``launch.json``.  This file will automatically open itself.
-- Within the configuration denoted by ``"name": "Launch"``, ensure the following settings are adjusted as follows:
+- Within the configuration block denoted by ``"name": "Launch"``, ensure the following settings are adjusted as follows:
 ```
 "program": "${workspaceRoot}/app.ts",
 "sourceMaps": true,
