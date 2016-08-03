@@ -79,7 +79,7 @@ app.ts(12,27): error TS2304: Cannot find name 'process'.
 - Hit the green button to run, red square to stop, set breakpoints in the margin, watch variables, etc.
 
 #### Getting TypeScript and Node to play nicely with each other
-- Now let's fix the code to allow us to reference type definitions.  When compiling app.ts, Typescript says nothing about the console object but balks at the the process object.  The console object is pretty ubiquitous (it's supported on most browsers) but the process object is specific to Node.  If we're coding for Node need to add a reference a type definition file before the TypeScript compiler will support use of the process object.
+- Now let's fix the code to allow us to reference type definitions.  When compiling app.ts, Typescript says nothing about the console object but balks at the the process object.  The console object is pretty ubiquitous (it's supported on most browsers) but the process object is specific to Node.  If our code is targetting Node then we need to add a reference to a suitable type definition file before the TypeScript compiler will support use of the process object.
 - Type the following to fix the errors (NOTE: I never quite figured out why I needed the "env" variant for node !?!?):
 ```sh
 $ typings install env~node --global --save
