@@ -2,7 +2,8 @@
 ## Using TypeScript projects with Visual Studio Code on Mac OSX
 #### Prerequsite Applications
 - Node and NPM (nodejs.org) - using v4.4.0
-- Visual Studio Code (code.visualstudio.com) - using v1.3.1 
+- Visual Studio Code (code.visualstudio.com) - using v1.3.1
+
 #### Prerequsite Global NPM packages (npm i -g <PACKAGE_NAME>)
 - Typescript (typescriptlang.org) - using v1.8.10
 ```sh
@@ -14,6 +15,7 @@ $ tsc -version
 $ npm i -g typings
 $ typings -version
 ```
+
 #### Creating a new project
 - Launch Visual Studio in a new empty directory
 ```sh
