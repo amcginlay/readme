@@ -7,12 +7,12 @@
 #### Prerequsite Global NPM packages
 - [Typescript](http://typescriptlang.org) - using v1.8.10
 ```sh
-$ npm i -g typescript
+$ npm install -g typescript
 $ tsc -version
 ```
 - [Typings](http://www.npmjs.com/package/typings) - using v1.3.2
 ```sh
-$ npm i -g typings
+$ npm install -g typings
 $ typings -version
 ```
 
